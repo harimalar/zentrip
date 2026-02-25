@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal — Ziptrip</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f9f9fb;
+      --card: #ffffff;
+      --accent: #007AFF;
+      --text: #1c1c1e;
+      --muted: #6e6e73;
+      --border: #e5e5ea;
+      --radius: 14px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    /* ── Header ─────────────────────────────────────────────── */
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: 28px 24px 20px;
+      text-align: center;
+    }
+    header .app-name {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+    header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    header p {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* ── Sticky nav tabs ─────────────────────────────────────── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(249,249,251,0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+      padding: 10px 16px;
+      overflow-x: auto;
+    }
+    nav a {
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--muted);
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 6px 16px;
+      white-space: nowrap;
+      transition: all 0.18s;
+    }
+    nav a:hover, nav a.active {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    /* ── Main layout ─────────────────────────────────────────── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 36px 20px 80px;
+    }
+
+    .section-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px 36px 28px;
+      margin-bottom: 32px;
+      scroll-margin-top: 72px;
+    }
+
+    /* ── Typography ──────────────────────────────────────────── */
+    .doc-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    .doc-meta {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      margin: 28px 0 10px;
+    }
+    h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      margin: 18px 0 8px;
+    }
+    p { margin-bottom: 12px; color: var(--text); }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+    li { margin-bottom: 6px; }
+
+    strong { font-weight: 600; }
+
+    .callout {
+      background: #fff9f0;
+      border-left: 3px solid #FF9500;
+      border-radius: 6px;
+      padding: 14px 16px;
+      font-size: 14px;
+      color: #4a3000;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    hr { border: none; border-top: 1px solid var(--border); margin: 20px 0; }
+
+    a.email-link { color: var(--accent); text-decoration: none; font-weight: 500; }
+    a.email-link:hover { text-decoration: underline; }
+
+    /* ── Footer ──────────────────────────────────────────────── */
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+      padding: 32px 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 560px) {
+      .section-card { padding: 24px 20px; }
+      header h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-name">Ziptrip</div>
+  <h1>Legal &amp; Privacy</h1>
+  <p>All legal documents for the Ziptrip iOS app</p>
+</header>
+
+<nav>
+  <a href="#privacy"      class="active">🔒 Privacy Policy</a>
+  <a href="#terms"                     >📋 Terms &amp; Conditions</a>
+  <a href="#exchange"                  >💱 Exchange Rate Disclaimer</a>
+</nav>
+
+<main>
+
+  <!-- ══════════════════════════════════════════ PRIVACY POLICY -->
+  <section class="section-card" id="privacy">
+    <div class="doc-title">Privacy Policy</div>
+    <div class="doc-meta">Last Updated: February 23, 2026 &nbsp;·&nbsp; Effective Date: February 23, 2026</div>
+
+    <h2>Introduction</h2>
+    <p>Ziptrip ("App", "we", "our", or "us") is committed to protecting your personal information and your right to privacy. This Privacy Policy explains what information we collect, how we use it, and what rights you have in relation to it.</p>
+    <p>By using Ziptrip, you agree to the collection and use of information in accordance with this policy.</p>
+
+    <h2>1. Information We Collect</h2>
+    <h3>a) Information You Provide</h3>
+    <ul>
+      <li>Travel documents (description, expiry dates, notes) you add to the Travel Vault.</li>
+      <li>Packing list items and categories you create.</li>
+      <li>Sticky notes and personal reminders.</li>
+      <li>Currency preferences and pinned currencies.</li>
+      <li>Trip route and departure dates you enter.</li>
+    </ul>
+
+    <h3>b) Information We Do NOT Collect</h3>
+    <p>We do not collect, transmit, or store any of the above information on external servers. All data is stored exclusively on your device (via UserDefaults and iCloud if enabled). We have no access to your personal content.</p>
+
+    <h3>c) Biometric Data</h3>
+    <p>If you enable Face ID / Touch ID to lock the Travel Vault, the App uses Apple's LocalAuthentication framework. Your biometric data never leaves your device and is never accessible to us.</p>
+
+    <h3>d) Exchange Rate Data</h3>
+    <p>When the Convert feature fetches exchange rates, a network request is made to an open exchange rate API. No personally identifiable information (PII) is transmitted in this request.</p>
+
+    <h2>2. How We Use Your Information</h2>
+    <p>We use the information entirely on-device to:</p>
+    <ul>
+      <li>Display your trips, packing lists, notes, and vault documents.</li>
+      <li>Compute currency conversions.</li>
+      <li>Authenticate you via biometrics when the Vault is locked.</li>
+    </ul>
+    <p>We do <strong>not</strong> use your information for advertising, analytics, or any commercial purpose.</p>
+
+    <h2>3. Data Storage &amp; iCloud Sync</h2>
+    <p>All app data is stored locally on your device. If you enable iCloud Sync, your data is stored in your private iCloud container (managed by Apple, governed by Apple's iCloud Terms and Privacy Policy). We do not have access to your iCloud data.</p>
+
+    <h2>4. Data Retention &amp; Deletion</h2>
+    <p>Since we do not store your data on any server, deletion is fully in your control:</p>
+    <ul>
+      <li>Delete the App to erase all locally stored data.</li>
+      <li>Disable iCloud Sync and remove the App from your iCloud account to delete cloud copies.</li>
+    </ul>
+
+    <h2>5. Children's Privacy</h2>
+    <p>Ziptrip is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us at <a class="email-link" href="mailto:rajhari@gmail.com">rajhari@gmail.com</a>.</p>
+
+    <h2>6. Third-Party Services</h2>
+    <p>The App may use the following third-party service:</p>
+    <ul>
+      <li><strong>Exchange Rate API</strong> (open.er-api.com) — for informational currency rates only. No PII is shared.</li>
+    </ul>
+    <p>We are not responsible for the privacy practices of third-party services.</p>
+
+    <h2>7. Security</h2>
+    <p>We implement appropriate technical measures to protect your information. However, no method of electronic storage is 100% secure. We encourage you to use the biometric lock feature for sensitive documents.</p>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Changes become effective when posted within the App. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>9. Contact Us</h2>
+    <p>For any privacy-related questions or concerns:<br>
+    <strong>Email:</strong> <a class="email-link" href="mailto:rajhari@gmail.com">rajhari@gmail.com</a><br>
+    <strong>App:</strong> Ziptrip</p>
+  </section>
+
+  <!-- ══════════════════════════════════════════ TERMS -->
+  <section class="section-card" id="terms">
+    <div class="doc-title">Terms &amp; Conditions</div>
+    <div class="doc-meta">Last Updated: February 23, 2026 &nbsp;·&nbsp; Effective Date: February 23, 2026</div>
+
+    <div class="callout">
+      Please read these Terms and Conditions carefully before using Ziptrip. By accessing or using the App, you confirm that you have read, understood, and agree to be bound by these Terms.
+    </div>
+
+    <h2>1. Acceptance of Terms</h2>
+    <p>These Terms &amp; Conditions ("Terms") constitute a legally binding agreement between you ("User", "you") and the developer of Ziptrip ("Developer", "we", "us"). By downloading, installing, or using the Ziptrip application, you agree to these Terms. If you do not agree, do not use the App.</p>
+
+    <h2>2. License Grant</h2>
+    <p>Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to use Ziptrip on any Apple device that you own or control, solely for your personal, non-commercial purposes.</p>
+    <p><strong>You may NOT:</strong></p>
+    <ul>
+      <li>Copy, modify, distribute, or sell any part of the App.</li>
+      <li>Reverse engineer or attempt to extract the source code.</li>
+      <li>Use the App for any unlawful or fraudulent purpose.</li>
+      <li>Transmit any malicious code or interfere with App functionality.</li>
+    </ul>
+
+    <h2>3. Intellectual Property</h2>
+    <p>All content, design, code, and elements of Ziptrip are the exclusive intellectual property of the Developer. No trademark, copyright, or other proprietary rights are transferred to you by these Terms.</p>
+
+    <h2>4. User Responsibilities</h2>
+    <p>You are solely responsible for:</p>
+    <ul>
+      <li>The accuracy of any travel information you enter into the App.</li>
+      <li>Maintaining backups of your data.</li>
+      <li>Keeping your device secure and protected with a passcode or biometrics.</li>
+      <li>Ensuring you have the right to store any documents or files you add to the Travel Vault.</li>
+    </ul>
+
+    <h2>5. Disclaimer of Warranties</h2>
+    <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. THE DEVELOPER EXPRESSLY DISCLAIMS ALL WARRANTIES INCLUDING, WITHOUT LIMITATION:</p>
+    <ul>
+      <li>Implied warranties of merchantability and fitness for a particular purpose.</li>
+      <li>Warranties that the App will be uninterrupted, error-free, or free of viruses.</li>
+      <li>Warranties regarding the accuracy of currency exchange rates.</li>
+    </ul>
+
+    <h2>6. Limitation of Liability</h2>
+    <p>To the maximum extent permitted by applicable law, in no event shall the Developer be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation:</p>
+    <ul>
+      <li>Loss of data or profits.</li>
+      <li>Business interruption.</li>
+      <li>Any damages resulting from reliance on currency exchange rates displayed in the App.</li>
+    </ul>
+    <p>In all cases, the Developer's total liability shall not exceed the amount you paid for the App (if any).</p>
+
+    <h2>7. Exchange Rate Disclaimer</h2>
+    <p>Currency exchange rates displayed in Ziptrip are sourced from third-party open data providers and are provided for informational purposes only. They do not constitute financial advice. Always verify rates with your bank or financial institution before making transactions.</p>
+
+    <h2>8. Termination</h2>
+    <p>We reserve the right to terminate your access to the App at any time, without notice, if you breach these Terms. On termination, your license to use the App ceases immediately.</p>
+
+    <h2>9. Governing Law</h2>
+    <p>These Terms shall be governed by and construed in accordance with applicable laws. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts in the Developer's jurisdiction.</p>
+
+    <h2>10. Changes to Terms</h2>
+    <p>We may update these Terms at any time. Updated Terms will be posted within the App. Continued use of the App after any changes constitutes your acceptance of the revised Terms.</p>
+
+    <h2>11. Contact</h2>
+    <p>If you have any questions about these Terms, please contact:<br>
+    <strong>Email:</strong> <a class="email-link" href="mailto:rajhari@gmail.com">rajhari@gmail.com</a><br>
+    <strong>App:</strong> Ziptrip</p>
+  </section>
+
+  <!-- ══════════════════════════════════════════ EXCHANGE RATE -->
+  <section class="section-card" id="exchange">
+    <div class="doc-title">Exchange Rate Disclaimer</div>
+    <div class="doc-meta">Last Updated: February 23, 2026</div>
+
+    <h2>1. Informational Purposes Only</h2>
+    <p>The currency exchange rates provided by Ziptrip are sourced from open third-party data providers and are intended for informational and travel budgeting purposes only. They do not reflect real-time interbank or market rates and should not be used for financial, investment, or business transaction decisions.</p>
+
+    <h2>2. Not Financial Advice</h2>
+    <p>Nothing in the Ziptrip App constitutes financial advice, investment advice, or a recommendation to buy or sell any currency. Always consult a qualified financial advisor or your bank for official exchange rates before making any financial transaction.</p>
+
+    <h2>3. Accuracy &amp; Timeliness</h2>
+    <p>We make reasonable efforts to update exchange rate data, but we do not guarantee the accuracy, completeness, or timeliness of the data. Rates can change rapidly and the data may be delayed or inaccurate.</p>
+
+    <h2>4. No Liability</h2>
+    <p>The Developer of Ziptrip shall not be held liable for any financial loss, damage, or inconvenience caused by reliance on the exchange rate information displayed in the App.</p>
+
+    <h2>5. Contact</h2>
+    <p>For questions: <a class="email-link" href="mailto:rajhari@gmail.com">rajhari@gmail.com</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Ziptrip. All rights reserved.</p>
+  <p style="margin-top:6px;">App Store · iOS · <a class="email-link" href="mailto:rajhari@gmail.com">rajhari@gmail.com</a></p>
+</footer>
+
+<script>
+  // Highlight active nav tab based on scroll position
+  const sections = document.querySelectorAll('.section-card');
+  const navLinks = document.querySelectorAll('nav a');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('active'));
+        const link = document.querySelector(`nav a[href="#${e.target.id}"]`);
+        if (link) link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  sections.forEach(s => observer.observe(s));
+</script>
+
+</body>
+</html>
